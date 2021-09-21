@@ -11,3 +11,7 @@ module.exports = function clone(target) {
     return target
   }
 }
+
+/**
+ * 此版本虽然 解决了数组,但是会有一个递归死循环的问题 会报错为 maxinum call stack size exceed 这种最大栈内存调用溢出的问题
+*/
